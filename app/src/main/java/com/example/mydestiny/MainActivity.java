@@ -26,7 +26,7 @@ Button start;
                 Intent intent = new Intent(getApplicationContext(), StartPage.class);
                 startActivity(intent);
             }
-
         });
+
     }
 }
