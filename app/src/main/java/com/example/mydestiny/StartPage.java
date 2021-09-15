@@ -26,8 +26,8 @@ public class StartPage extends AppCompatActivity {
 
                 //0 -> Yes , 1 -> No
                 Random rand = new Random();
-                System.out.println(rand.nextInt(1)); // 0~1
                 result = rand.nextInt(2);
+                System.out.println(result); //
 
 
                 if(result == 0){
@@ -35,7 +35,7 @@ public class StartPage extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), Yes.class);
                 startActivity(intent);
 
-                }else if (result == 1){
+                }else{
                     System.out.println("No");
                     Intent intent = new Intent(getApplicationContext(), No.class);
                 startActivity(intent);
